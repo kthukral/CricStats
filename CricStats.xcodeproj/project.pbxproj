@@ -1,0 +1,325 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9ECADA1116D83F2400AF3CEA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ECADA1016D83F2400AF3CEA /* UIKit.framework */; };
+		9ECADA1316D83F2400AF3CEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ECADA1216D83F2400AF3CEA /* Foundation.framework */; };
+		9ECADA1516D83F2400AF3CEA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ECADA1416D83F2400AF3CEA /* CoreGraphics.framework */; };
+		9ECADA1B16D83F2400AF3CEA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9ECADA1916D83F2400AF3CEA /* InfoPlist.strings */; };
+		9ECADA1D16D83F2400AF3CEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ECADA1C16D83F2400AF3CEA /* main.m */; };
+		9ECADA2116D83F2400AF3CEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ECADA2016D83F2400AF3CEA /* AppDelegate.m */; };
+		9ECADA2316D83F2400AF3CEA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ECADA2216D83F2400AF3CEA /* Default.png */; };
+		9ECADA2516D83F2400AF3CEA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ECADA2416D83F2400AF3CEA /* Default@2x.png */; };
+		9ECADA2716D83F2400AF3CEA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9ECADA2616D83F2400AF3CEA /* Default-568h@2x.png */; };
+		9ECADA3016D83F6E00AF3CEA /* TeamListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ECADA2E16D83F6E00AF3CEA /* TeamListViewController.m */; };
+		9ECADA3116D83F6E00AF3CEA /* TeamListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ECADA2F16D83F6E00AF3CEA /* TeamListViewController.xib */; };
+		9ECADA3316D8431C00AF3CEA /* Teams.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9ECADA3216D8431C00AF3CEA /* Teams.plist */; };
+		9ECADA3716D848C200AF3CEA /* PlayerListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ECADA3516D848C100AF3CEA /* PlayerListViewController.m */; };
+		9ECADA3816D848C200AF3CEA /* PlayerListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ECADA3616D848C100AF3CEA /* PlayerListViewController.xib */; };
+		9ECADA3C16D85A1E00AF3CEA /* IndiaPlayerList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9ECADA3B16D85A1E00AF3CEA /* IndiaPlayerList.plist */; };
+		9ECADA4016D85B6800AF3CEA /* PlayerStatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ECADA3E16D85B6800AF3CEA /* PlayerStatsViewController.m */; };
+		9ECADA4116D85B6800AF3CEA /* PlayerStatsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ECADA3F16D85B6800AF3CEA /* PlayerStatsViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9ECADA0D16D83F2400AF3CEA /* CricStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CricStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ECADA1016D83F2400AF3CEA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9ECADA1216D83F2400AF3CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9ECADA1416D83F2400AF3CEA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9ECADA1816D83F2400AF3CEA /* CricStats-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CricStats-Info.plist"; sourceTree = "<group>"; };
+		9ECADA1A16D83F2400AF3CEA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9ECADA1C16D83F2400AF3CEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9ECADA1E16D83F2400AF3CEA /* CricStats-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CricStats-Prefix.pch"; sourceTree = "<group>"; };
+		9ECADA1F16D83F2400AF3CEA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9ECADA2016D83F2400AF3CEA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9ECADA2216D83F2400AF3CEA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		9ECADA2416D83F2400AF3CEA /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		9ECADA2616D83F2400AF3CEA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		9ECADA2D16D83F6E00AF3CEA /* TeamListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamListViewController.h; sourceTree = "<group>"; };
+		9ECADA2E16D83F6E00AF3CEA /* TeamListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamListViewController.m; sourceTree = "<group>"; };
+		9ECADA2F16D83F6E00AF3CEA /* TeamListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TeamListViewController.xib; sourceTree = "<group>"; };
+		9ECADA3216D8431C00AF3CEA /* Teams.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Teams.plist; sourceTree = "<group>"; };
+		9ECADA3416D848C100AF3CEA /* PlayerListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerListViewController.h; sourceTree = "<group>"; };
+		9ECADA3516D848C100AF3CEA /* PlayerListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerListViewController.m; sourceTree = "<group>"; };
+		9ECADA3616D848C100AF3CEA /* PlayerListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerListViewController.xib; sourceTree = "<group>"; };
+		9ECADA3B16D85A1E00AF3CEA /* IndiaPlayerList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = IndiaPlayerList.plist; sourceTree = "<group>"; };
+		9ECADA3D16D85B6800AF3CEA /* PlayerStatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerStatsViewController.h; sourceTree = "<group>"; };
+		9ECADA3E16D85B6800AF3CEA /* PlayerStatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerStatsViewController.m; sourceTree = "<group>"; };
+		9ECADA3F16D85B6800AF3CEA /* PlayerStatsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerStatsViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9ECADA0A16D83F2400AF3CEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ECADA1116D83F2400AF3CEA /* UIKit.framework in Frameworks */,
+				9ECADA1316D83F2400AF3CEA /* Foundation.framework in Frameworks */,
+				9ECADA1516D83F2400AF3CEA /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9ECADA0416D83F2400AF3CEA = {
+			isa = PBXGroup;
+			children = (
+				9ECADA1616D83F2400AF3CEA /* CricStats */,
+				9ECADA0F16D83F2400AF3CEA /* Frameworks */,
+				9ECADA0E16D83F2400AF3CEA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9ECADA0E16D83F2400AF3CEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9ECADA0D16D83F2400AF3CEA /* CricStats.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9ECADA0F16D83F2400AF3CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9ECADA1016D83F2400AF3CEA /* UIKit.framework */,
+				9ECADA1216D83F2400AF3CEA /* Foundation.framework */,
+				9ECADA1416D83F2400AF3CEA /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9ECADA1616D83F2400AF3CEA /* CricStats */ = {
+			isa = PBXGroup;
+			children = (
+				9ECADA2D16D83F6E00AF3CEA /* TeamListViewController.h */,
+				9ECADA2E16D83F6E00AF3CEA /* TeamListViewController.m */,
+				9ECADA3416D848C100AF3CEA /* PlayerListViewController.h */,
+				9ECADA3516D848C100AF3CEA /* PlayerListViewController.m */,
+				9ECADA3D16D85B6800AF3CEA /* PlayerStatsViewController.h */,
+				9ECADA3E16D85B6800AF3CEA /* PlayerStatsViewController.m */,
+				9ECADA3F16D85B6800AF3CEA /* PlayerStatsViewController.xib */,
+				9ECADA2F16D83F6E00AF3CEA /* TeamListViewController.xib */,
+				9ECADA3616D848C100AF3CEA /* PlayerListViewController.xib */,
+				9ECADA1F16D83F2400AF3CEA /* AppDelegate.h */,
+				9ECADA2016D83F2400AF3CEA /* AppDelegate.m */,
+				9ECADA1716D83F2400AF3CEA /* Supporting Files */,
+			);
+			path = CricStats;
+			sourceTree = "<group>";
+		};
+		9ECADA1716D83F2400AF3CEA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9ECADA3216D8431C00AF3CEA /* Teams.plist */,
+				9ECADA1816D83F2400AF3CEA /* CricStats-Info.plist */,
+				9ECADA1916D83F2400AF3CEA /* InfoPlist.strings */,
+				9ECADA1C16D83F2400AF3CEA /* main.m */,
+				9ECADA1E16D83F2400AF3CEA /* CricStats-Prefix.pch */,
+				9ECADA2216D83F2400AF3CEA /* Default.png */,
+				9ECADA2416D83F2400AF3CEA /* Default@2x.png */,
+				9ECADA2616D83F2400AF3CEA /* Default-568h@2x.png */,
+				9ECADA3B16D85A1E00AF3CEA /* IndiaPlayerList.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9ECADA0C16D83F2400AF3CEA /* CricStats */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9ECADA2A16D83F2400AF3CEA /* Build configuration list for PBXNativeTarget "CricStats" */;
+			buildPhases = (
+				9ECADA0916D83F2400AF3CEA /* Sources */,
+				9ECADA0A16D83F2400AF3CEA /* Frameworks */,
+				9ECADA0B16D83F2400AF3CEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CricStats;
+			productName = CricStats;
+			productReference = 9ECADA0D16D83F2400AF3CEA /* CricStats.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9ECADA0516D83F2400AF3CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Karan Thukral";
+			};
+			buildConfigurationList = 9ECADA0816D83F2400AF3CEA /* Build configuration list for PBXProject "CricStats" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9ECADA0416D83F2400AF3CEA;
+			productRefGroup = 9ECADA0E16D83F2400AF3CEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9ECADA0C16D83F2400AF3CEA /* CricStats */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9ECADA0B16D83F2400AF3CEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ECADA1B16D83F2400AF3CEA /* InfoPlist.strings in Resources */,
+				9ECADA2316D83F2400AF3CEA /* Default.png in Resources */,
+				9ECADA2516D83F2400AF3CEA /* Default@2x.png in Resources */,
+				9ECADA2716D83F2400AF3CEA /* Default-568h@2x.png in Resources */,
+				9ECADA3116D83F6E00AF3CEA /* TeamListViewController.xib in Resources */,
+				9ECADA3316D8431C00AF3CEA /* Teams.plist in Resources */,
+				9ECADA3816D848C200AF3CEA /* PlayerListViewController.xib in Resources */,
+				9ECADA3C16D85A1E00AF3CEA /* IndiaPlayerList.plist in Resources */,
+				9ECADA4116D85B6800AF3CEA /* PlayerStatsViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9ECADA0916D83F2400AF3CEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ECADA1D16D83F2400AF3CEA /* main.m in Sources */,
+				9ECADA2116D83F2400AF3CEA /* AppDelegate.m in Sources */,
+				9ECADA3016D83F6E00AF3CEA /* TeamListViewController.m in Sources */,
+				9ECADA3716D848C200AF3CEA /* PlayerListViewController.m in Sources */,
+				9ECADA4016D85B6800AF3CEA /* PlayerStatsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9ECADA1916D83F2400AF3CEA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9ECADA1A16D83F2400AF3CEA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9ECADA2816D83F2400AF3CEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9ECADA2916D83F2400AF3CEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9ECADA2B16D83F2400AF3CEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CricStats/CricStats-Prefix.pch";
+				INFOPLIST_FILE = "CricStats/CricStats-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9ECADA2C16D83F2400AF3CEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CricStats/CricStats-Prefix.pch";
+				INFOPLIST_FILE = "CricStats/CricStats-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9ECADA0816D83F2400AF3CEA /* Build configuration list for PBXProject "CricStats" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ECADA2816D83F2400AF3CEA /* Debug */,
+				9ECADA2916D83F2400AF3CEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9ECADA2A16D83F2400AF3CEA /* Build configuration list for PBXNativeTarget "CricStats" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9ECADA2B16D83F2400AF3CEA /* Debug */,
+				9ECADA2C16D83F2400AF3CEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9ECADA0516D83F2400AF3CEA /* Project object */;
+}
