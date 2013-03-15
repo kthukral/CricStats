@@ -31,7 +31,7 @@
 {
     [super viewDidLoad];
     
-    self.navigationItem.title = @"International Teams";
+    self.navigationItem.title = @"Teams";
     
     
     NSString *teamListFile = [[NSBundle mainBundle]pathForResource:@"Teams" ofType:@"plist"];

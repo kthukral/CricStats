@@ -32,17 +32,36 @@
     [super viewDidLoad];
     
     self.navigationItem.title = _TeamName;
+    NSLog(@"Team in load = %@",_TeamName);
+    
+    if([_TeamName isEqualToString:@"India"]){
+        NSLog(@"true");
     NSString *indiaPlayerList = [[NSBundle mainBundle]pathForResource:@"IndiaPlayerList" ofType:@"plist"];
     _playerList = [[NSDictionary alloc]initWithContentsOfFile:indiaPlayerList];
     _playerlistKeys = [_playerList allKeys];
+    }
     
-    
-
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+
+- (void)viewDidAppear:(BOOL)animated{
+     NSLog(@"Team = %@",_TeamName);
+    [self viewDidLoad];
+    /* self.navigationItem.title = _TeamName;
+    NSString *indiaPlayerList = [[NSBundle mainBundle]pathForResource:@"IndiaPlayerList" ofType:@"plist"];
+    _playerList = [[NSDictionary alloc]initWithContentsOfFile:indiaPlayerList];
+    _playerlistKeys = [_playerList allKeys];
+    
+    NSLog(@"List = %@", [_playerlistKeys objectAtIndex:0]); */
+    
+    
+    
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -65,8 +84,9 @@
     // Return the number of rows in the section.
     if([_TeamName isEqual: @"India"]){
         return [_playerList count];
+    }else {
+    return [_playerList count];
     }
-    return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
