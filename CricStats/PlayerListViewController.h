@@ -7,13 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PlayerStatsViewController.h"
 
 @interface PlayerListViewController : UITableViewController
 
 @property (strong,nonatomic) NSString * TeamName;
-@property (strong,nonatomic) NSDictionary *playerList;
+@property (strong,nonatomic) NSMutableDictionary *playerList;
 @property (strong,nonatomic) NSArray *playerlistKeys;
-@property (strong,nonatomic) PlayerStatsViewController *playerStatsViewController;
 
 @end

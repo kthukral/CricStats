@@ -7,7 +7,6 @@
 //
 
 #import "PlayerListViewController.h"
-#import "PlayerStatsViewController.h"
 
 @interface PlayerListViewController ()
 
@@ -32,15 +31,9 @@
     [super viewDidLoad];
     
     self.navigationItem.title = _TeamName;
-    NSLog(@"Team in load = %@",_TeamName);
-    
-    if([_TeamName isEqualToString:@"India"]){
-        NSLog(@"true");
-    NSString *indiaPlayerList = [[NSBundle mainBundle]pathForResource:@"IndiaPlayerList" ofType:@"plist"];
-    _playerList = [[NSDictionary alloc]initWithContentsOfFile:indiaPlayerList];
-    _playerlistKeys = [_playerList allKeys];
-    }
-    
+
+
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -50,17 +43,32 @@
 
 
 - (void)viewDidAppear:(BOOL)animated{
-     NSLog(@"Team = %@",_TeamName);
-    [self viewDidLoad];
-    /* self.navigationItem.title = _TeamName;
-    NSString *indiaPlayerList = [[NSBundle mainBundle]pathForResource:@"IndiaPlayerList" ofType:@"plist"];
-    _playerList = [[NSDictionary alloc]initWithContentsOfFile:indiaPlayerList];
-    _playerlistKeys = [_playerList allKeys];
     
-    NSLog(@"List = %@", [_playerlistKeys objectAtIndex:0]); */
+    self.navigationItem.title = _TeamName;
+    
+    if([_TeamName isEqualToString:@"India"]){
+        NSString *indiaPlayerList = [[NSBundle mainBundle]pathForResource:@"IndiaPlayerList" ofType:@"plist"];
+        _playerList = [[NSMutableDictionary alloc]initWithContentsOfFile:indiaPlayerList];
+        _playerlistKeys = [_playerList allKeys];
+    }else {
+        [_playerList removeAllObjects];
+        _playerlistKeys = [_playerList allKeys];
+        
+    }
+
+    [self.tableView reloadData];
     
     
 
+}
+
+-(void)viewDidDisappear:(BOOL)animated{
+    
+    [_playerList removeAllObjects];
+    _playerlistKeys = [_playerList allKeys];
+    
+    [self.tableView reloadData];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -152,12 +160,12 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    if(!self.playerStatsViewController){
+    /* if(!self.playerStatsViewController){
         self.playerStatsViewController = [[PlayerStatsViewController alloc]initWithNibName:@"PlayerStatsViewController" bundle:nil];
     }
     NSString *playername = _playerlistKeys[indexPath.row];
     self.playerStatsViewController.recievedPlayer = playername;
-    [self.navigationController pushViewController:self.playerStatsViewController animated:YES];
+    [self.navigationController pushViewController:self.playerStatsViewController animated:YES]; */
 
     // Navigation logic may go here. Create and push another view controller.
     /*

@@ -22,8 +22,6 @@
 		9ECADA3716D848C200AF3CEA /* PlayerListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ECADA3516D848C100AF3CEA /* PlayerListViewController.m */; };
 		9ECADA3816D848C200AF3CEA /* PlayerListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ECADA3616D848C100AF3CEA /* PlayerListViewController.xib */; };
 		9ECADA3C16D85A1E00AF3CEA /* IndiaPlayerList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9ECADA3B16D85A1E00AF3CEA /* IndiaPlayerList.plist */; };
-		9ECADA4016D85B6800AF3CEA /* PlayerStatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ECADA3E16D85B6800AF3CEA /* PlayerStatsViewController.m */; };
-		9ECADA4116D85B6800AF3CEA /* PlayerStatsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ECADA3F16D85B6800AF3CEA /* PlayerStatsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,9 +46,6 @@
 		9ECADA3516D848C100AF3CEA /* PlayerListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerListViewController.m; sourceTree = "<group>"; };
 		9ECADA3616D848C100AF3CEA /* PlayerListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerListViewController.xib; sourceTree = "<group>"; };
 		9ECADA3B16D85A1E00AF3CEA /* IndiaPlayerList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = IndiaPlayerList.plist; sourceTree = "<group>"; };
-		9ECADA3D16D85B6800AF3CEA /* PlayerStatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerStatsViewController.h; sourceTree = "<group>"; };
-		9ECADA3E16D85B6800AF3CEA /* PlayerStatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerStatsViewController.m; sourceTree = "<group>"; };
-		9ECADA3F16D85B6800AF3CEA /* PlayerStatsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerStatsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +96,6 @@
 				9ECADA2E16D83F6E00AF3CEA /* TeamListViewController.m */,
 				9ECADA3416D848C100AF3CEA /* PlayerListViewController.h */,
 				9ECADA3516D848C100AF3CEA /* PlayerListViewController.m */,
-				9ECADA3D16D85B6800AF3CEA /* PlayerStatsViewController.h */,
-				9ECADA3E16D85B6800AF3CEA /* PlayerStatsViewController.m */,
-				9ECADA3F16D85B6800AF3CEA /* PlayerStatsViewController.xib */,
 				9ECADA2F16D83F6E00AF3CEA /* TeamListViewController.xib */,
 				9ECADA3616D848C100AF3CEA /* PlayerListViewController.xib */,
 				9ECADA1F16D83F2400AF3CEA /* AppDelegate.h */,
@@ -188,7 +180,6 @@
 				9ECADA3316D8431C00AF3CEA /* Teams.plist in Resources */,
 				9ECADA3816D848C200AF3CEA /* PlayerListViewController.xib in Resources */,
 				9ECADA3C16D85A1E00AF3CEA /* IndiaPlayerList.plist in Resources */,
-				9ECADA4116D85B6800AF3CEA /* PlayerStatsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +194,6 @@
 				9ECADA2116D83F2400AF3CEA /* AppDelegate.m in Sources */,
 				9ECADA3016D83F6E00AF3CEA /* TeamListViewController.m in Sources */,
 				9ECADA3716D848C200AF3CEA /* PlayerListViewController.m in Sources */,
-				9ECADA4016D85B6800AF3CEA /* PlayerStatsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +308,7 @@
 				9ECADA2C16D83F2400AF3CEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
