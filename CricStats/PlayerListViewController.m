@@ -159,6 +159,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    self.baseView = [[BaseViewController alloc]initWithNibName:@"BaseViewController" bundle:nil];
+    [self.navigationController pushViewController:self.baseView animated:YES];
+    
     
     /* if(!self.playerStatsViewController){
         self.playerStatsViewController = [[PlayerStatsViewController alloc]initWithNibName:@"PlayerStatsViewController" bundle:nil];

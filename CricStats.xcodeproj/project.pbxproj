@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E010E0016F651B200DDCB38 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E010DFE16F651B200DDCB38 /* BaseViewController.m */; };
+		9E010E0116F651B200DDCB38 /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E010DFF16F651B200DDCB38 /* BaseViewController.xib */; };
+		9E010E0516F651C100DDCB38 /* BattingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E010E0316F651C100DDCB38 /* BattingViewController.m */; };
+		9E010E0616F651C100DDCB38 /* BattingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E010E0416F651C100DDCB38 /* BattingViewController.xib */; };
+		9E010E0A16F651CB00DDCB38 /* BowlingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E010E0816F651CB00DDCB38 /* BowlingViewController.m */; };
+		9E010E0B16F651CB00DDCB38 /* BowlingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E010E0916F651CB00DDCB38 /* BowlingViewController.xib */; };
 		9ECADA1116D83F2400AF3CEA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ECADA1016D83F2400AF3CEA /* UIKit.framework */; };
 		9ECADA1316D83F2400AF3CEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ECADA1216D83F2400AF3CEA /* Foundation.framework */; };
 		9ECADA1516D83F2400AF3CEA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ECADA1416D83F2400AF3CEA /* CoreGraphics.framework */; };
@@ -25,6 +31,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9E010DFD16F651B200DDCB38 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		9E010DFE16F651B200DDCB38 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		9E010DFF16F651B200DDCB38 /* BaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
+		9E010E0216F651C100DDCB38 /* BattingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BattingViewController.h; sourceTree = "<group>"; };
+		9E010E0316F651C100DDCB38 /* BattingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BattingViewController.m; sourceTree = "<group>"; };
+		9E010E0416F651C100DDCB38 /* BattingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BattingViewController.xib; sourceTree = "<group>"; };
+		9E010E0716F651CB00DDCB38 /* BowlingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BowlingViewController.h; sourceTree = "<group>"; };
+		9E010E0816F651CB00DDCB38 /* BowlingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BowlingViewController.m; sourceTree = "<group>"; };
+		9E010E0916F651CB00DDCB38 /* BowlingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BowlingViewController.xib; sourceTree = "<group>"; };
 		9ECADA0D16D83F2400AF3CEA /* CricStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CricStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ECADA1016D83F2400AF3CEA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9ECADA1216D83F2400AF3CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -96,6 +111,15 @@
 				9ECADA2E16D83F6E00AF3CEA /* TeamListViewController.m */,
 				9ECADA3416D848C100AF3CEA /* PlayerListViewController.h */,
 				9ECADA3516D848C100AF3CEA /* PlayerListViewController.m */,
+				9E010DFD16F651B200DDCB38 /* BaseViewController.h */,
+				9E010DFE16F651B200DDCB38 /* BaseViewController.m */,
+				9E010E0216F651C100DDCB38 /* BattingViewController.h */,
+				9E010E0316F651C100DDCB38 /* BattingViewController.m */,
+				9E010E0716F651CB00DDCB38 /* BowlingViewController.h */,
+				9E010E0816F651CB00DDCB38 /* BowlingViewController.m */,
+				9E010DFF16F651B200DDCB38 /* BaseViewController.xib */,
+				9E010E0416F651C100DDCB38 /* BattingViewController.xib */,
+				9E010E0916F651CB00DDCB38 /* BowlingViewController.xib */,
 				9ECADA2F16D83F6E00AF3CEA /* TeamListViewController.xib */,
 				9ECADA3616D848C100AF3CEA /* PlayerListViewController.xib */,
 				9ECADA1F16D83F2400AF3CEA /* AppDelegate.h */,
@@ -180,6 +204,9 @@
 				9ECADA3316D8431C00AF3CEA /* Teams.plist in Resources */,
 				9ECADA3816D848C200AF3CEA /* PlayerListViewController.xib in Resources */,
 				9ECADA3C16D85A1E00AF3CEA /* IndiaPlayerList.plist in Resources */,
+				9E010E0116F651B200DDCB38 /* BaseViewController.xib in Resources */,
+				9E010E0616F651C100DDCB38 /* BattingViewController.xib in Resources */,
+				9E010E0B16F651CB00DDCB38 /* BowlingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +221,9 @@
 				9ECADA2116D83F2400AF3CEA /* AppDelegate.m in Sources */,
 				9ECADA3016D83F6E00AF3CEA /* TeamListViewController.m in Sources */,
 				9ECADA3716D848C200AF3CEA /* PlayerListViewController.m in Sources */,
+				9E010E0016F651B200DDCB38 /* BaseViewController.m in Sources */,
+				9E010E0516F651C100DDCB38 /* BattingViewController.m in Sources */,
+				9E010E0A16F651CB00DDCB38 /* BowlingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
