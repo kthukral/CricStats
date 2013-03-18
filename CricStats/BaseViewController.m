@@ -29,13 +29,20 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
     _tabBarController = [[UITabBarController alloc]init];
-    BattingViewController *battingstats = [[BattingViewController alloc]initWithNibName:@"BattingViewController" bundle:nil];
+    
+    BattingViewController *battingstats =[[BattingViewController alloc]initWithNibName:@"BattingViewController" bundle:nil];
+    
     BowlingViewController *bowlingstats = [[BowlingViewController alloc]initWithNibName:@"BowlingViewController" bundle:nil];
+    
+    battingstats.tabBarItem.title = @"Batting";
+    bowlingstats.tabBarItem.title = @"Bowling";
     
     NSArray* controllers = [[NSArray alloc]initWithObjects:battingstats,bowlingstats, nil];
     _tabBarController.viewControllers = controllers;
     _tabBarController.selectedIndex = 0;
+    [self.view addSubview:_tabBarController.view];
 }
 
 - (void)didReceiveMemoryWarning
