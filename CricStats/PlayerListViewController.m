@@ -7,6 +7,8 @@
 //
 
 #import "PlayerListViewController.h"
+#import "BattingViewController.h"
+#import "BowlingViewController.h"
 
 @interface PlayerListViewController ()
 
@@ -16,6 +18,7 @@
 @synthesize TeamName = _TeamName;
 @synthesize playerList = _playerList;
 @synthesize playerlistKeys = _playerlistKeys;
+@synthesize tabBarController = _tabBarController;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -159,9 +162,26 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    self.baseView = [[BaseViewController alloc]initWithNibName:@"BaseViewController" bundle:nil];
-    [self.navigationController pushViewController:self.baseView animated:YES];
+    //self.baseView = [[BaseViewController alloc]initWithNibName:@"BaseViewController" bundle:nil];
+    //[self.navigationController pushViewController:self.baseView animated:YES];
     
+    _tabBarController = [[UITabBarController alloc]init];
+    
+    BattingViewController *battingstats =[[BattingViewController alloc]initWithNibName:@"BattingViewController" bundle:nil];
+    
+    BowlingViewController *bowlingstats = [[BowlingViewController alloc]initWithNibName:@"BowlingViewController" bundle:nil];
+    
+    battingstats.tabBarItem.title = @"Batting";
+    bowlingstats.tabBarItem.title = @"Bowling";
+    NSString *player = _playerlistKeys[indexPath.row];
+    battingstats.playerName = player;
+    bowlingstats.playerName = player;
+    NSArray* controllers = [[NSArray alloc]initWithObjects:battingstats,bowlingstats, nil];
+    _tabBarController.viewControllers = controllers;
+    _tabBarController.selectedIndex = 0;
+    //[self.view addSubview:_tabBarController.view];
+    [self presentModalViewController:_tabBarController animated:YES];
+
     
     /* if(!self.playerStatsViewController){
         self.playerStatsViewController = [[PlayerStatsViewController alloc]initWithNibName:@"PlayerStatsViewController" bundle:nil];

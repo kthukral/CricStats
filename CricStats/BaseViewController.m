@@ -42,7 +42,8 @@
     NSArray* controllers = [[NSArray alloc]initWithObjects:battingstats,bowlingstats, nil];
     _tabBarController.viewControllers = controllers;
     _tabBarController.selectedIndex = 0;
-    [self.view addSubview:_tabBarController.view];
+    //[self.view addSubview:_tabBarController.view];
+    [self presentModalViewController:_tabBarController animated:YES];
 }
 
 - (void)didReceiveMemoryWarning

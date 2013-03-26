@@ -13,6 +13,8 @@
 @end
 
 @implementation BattingViewController
+@synthesize playerName = _playerName;
+@synthesize playerNameInView = _playerNameInView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +29,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    NSLog(@"PLAYER NAME = %@",_playerName);
+    _playerNameInView.text = _playerName;
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,4 +39,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)dismissView:(id)sender {
+    [self dismissModalViewControllerAnimated:YES];
+}
 @end

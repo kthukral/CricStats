@@ -10,4 +10,6 @@
 
 @interface BowlingViewController : UIViewController
 
+@property (nonatomic,strong) NSString *playerName;
+
 @end

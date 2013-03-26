@@ -14,6 +14,8 @@
 
 @implementation BowlingViewController
 
+@synthesize playerName = _playerName;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];

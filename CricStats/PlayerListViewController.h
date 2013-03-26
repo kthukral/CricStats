@@ -11,6 +11,7 @@
 
 @interface PlayerListViewController : UITableViewController
 
+@property (strong,nonatomic) UITabBarController *tabBarController;
 @property (strong,nonatomic) NSString * TeamName;
 @property (strong,nonatomic) NSMutableDictionary *playerList;
 @property (strong,nonatomic) NSArray *playerlistKeys;

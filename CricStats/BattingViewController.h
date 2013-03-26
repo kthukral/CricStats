@@ -10,4 +10,9 @@
 
 @interface BattingViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *playerNameInView;
+@property (nonatomic,strong) NSString *playerName;
+- (IBAction)dismissView:(id)sender;
+
+
 @end
