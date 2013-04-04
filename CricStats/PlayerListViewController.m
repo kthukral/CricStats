@@ -9,6 +9,7 @@
 #import "PlayerListViewController.h"
 #import "BattingViewController.h"
 #import "BowlingViewController.h"
+#import "NewCustomTableCellClass.h"
 
 @interface PlayerListViewController ()
 
@@ -99,9 +100,14 @@
     }
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 76;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    /* UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     if(cell == nil){
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
         
@@ -115,6 +121,20 @@
     
     [[cell textLabel] setText:currentPlayer];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    return cell; */
+    
+    NewCustomTableCellClass *cell = (NewCustomTableCellClass *)[tableView dequeueReusableCellWithIdentifier:@"cell"];
+    if(cell == nil){
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"NewCustomTableCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
+    }
+    NSString *currentPlayer;
+    if([indexPath section] == 0){
+        currentPlayer = [_playerlistKeys objectAtIndex:indexPath.row];
+    }
+    [[cell cellNameLabel] setText:currentPlayer];
+    cell.cellImageView.image = [UIImage imageNamed:@"india-flag.gif"];
+    //cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
     
 }
