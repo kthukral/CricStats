@@ -100,14 +100,18 @@
     }
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+//Height of custom cell
+/* - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 76;
 }
+ */
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    /* UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    //Use the default table view cell
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     if(cell == nil){
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
         
@@ -121,9 +125,11 @@
     
     [[cell textLabel] setText:currentPlayer];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    return cell; */
+    return cell;
     
-    NewCustomTableCellClass *cell = (NewCustomTableCellClass *)[tableView dequeueReusableCellWithIdentifier:@"cell"];
+    //Using a custom cell
+    
+    /* NewCustomTableCellClass *cell = (NewCustomTableCellClass *)[tableView dequeueReusableCellWithIdentifier:@"cell"];
     if(cell == nil){
         NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"NewCustomTableCell" owner:self options:nil];
         cell = [nib objectAtIndex:0];
@@ -135,7 +141,7 @@
     [[cell cellNameLabel] setText:currentPlayer];
     cell.cellImageView.image = [UIImage imageNamed:@"india-flag.gif"];
     //cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    return cell;
+    return cell; */
     
 }
 
