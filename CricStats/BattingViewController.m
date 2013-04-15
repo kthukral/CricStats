@@ -1,26 +1,20 @@
 //
-//  PlayerStatsViewController.m
+//  BattingViewController.m
 //  CricStats
 //
-//  Created by Karan Thukral on 2013-02-22.
+//  Created by Karan Thukral on 2013-03-17.
 //  Copyright (c) 2013 Karan Thukral. All rights reserved.
 //
 
-#import "PlayerStatsViewController.h"
+#import "BattingViewController.h"
 
-@interface PlayerStatsViewController ()
+@interface BattingViewController ()
 
 @end
 
-@implementation PlayerStatsViewController
-
-@synthesize PlayerName = _PlayerName;
-@synthesize PlayerBDay = _PlayerBDay;
-@synthesize ODIScore = _ODIScore;
-@synthesize ODIMatches = _ODIMatches;
-@synthesize ODIBestScore = _ODIBestScore;
-@synthesize ODI50s = _ODI50s;
-@synthesize ODI100s = _ODI100s;
+@implementation BattingViewController
+@synthesize playerName = _playerName;
+@synthesize playerNameInView = _playerNameInView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -34,8 +28,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
     // Do any additional setup after loading the view from its nib.
+    NSLog(@"PLAYER NAME = %@",_playerName);
+    _playerNameInView.text = _playerName;
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,4 +39,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)dismissView:(id)sender {
+    [self dismissModalViewControllerAnimated:YES];
+}
 @end

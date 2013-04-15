@@ -38,6 +38,8 @@
     
     _cricketTeams = [[NSDictionary alloc]initWithContentsOfFile:teamListFile];
     _teamKeys = [_cricketTeams allKeys];
+    
+    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;

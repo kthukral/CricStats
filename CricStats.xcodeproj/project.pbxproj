@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E010E0016F651B200DDCB38 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E010DFE16F651B200DDCB38 /* BaseViewController.m */; };
+		9E010E0116F651B200DDCB38 /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E010DFF16F651B200DDCB38 /* BaseViewController.xib */; };
+		9E010E0516F651C100DDCB38 /* BattingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E010E0316F651C100DDCB38 /* BattingViewController.m */; };
+		9E010E0616F651C100DDCB38 /* BattingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E010E0416F651C100DDCB38 /* BattingViewController.xib */; };
+		9E010E0A16F651CB00DDCB38 /* BowlingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E010E0816F651CB00DDCB38 /* BowlingViewController.m */; };
+		9E010E0B16F651CB00DDCB38 /* BowlingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E010E0916F651CB00DDCB38 /* BowlingViewController.xib */; };
+		9E0607E6170D0ED1001F54E7 /* NewCustomTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E0607E5170D0ED1001F54E7 /* NewCustomTableCell.xib */; };
+		9E0607E9170D0F58001F54E7 /* NewCustomTableCellClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0607E8170D0F58001F54E7 /* NewCustomTableCellClass.m */; };
+		9E0607EB170D1301001F54E7 /* india-flag.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9E0607EA170D1301001F54E7 /* india-flag.gif */; };
 		9ECADA1116D83F2400AF3CEA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ECADA1016D83F2400AF3CEA /* UIKit.framework */; };
 		9ECADA1316D83F2400AF3CEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ECADA1216D83F2400AF3CEA /* Foundation.framework */; };
 		9ECADA1516D83F2400AF3CEA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ECADA1416D83F2400AF3CEA /* CoreGraphics.framework */; };
@@ -22,11 +31,22 @@
 		9ECADA3716D848C200AF3CEA /* PlayerListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ECADA3516D848C100AF3CEA /* PlayerListViewController.m */; };
 		9ECADA3816D848C200AF3CEA /* PlayerListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ECADA3616D848C100AF3CEA /* PlayerListViewController.xib */; };
 		9ECADA3C16D85A1E00AF3CEA /* IndiaPlayerList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9ECADA3B16D85A1E00AF3CEA /* IndiaPlayerList.plist */; };
-		9ECADA4016D85B6800AF3CEA /* PlayerStatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ECADA3E16D85B6800AF3CEA /* PlayerStatsViewController.m */; };
-		9ECADA4116D85B6800AF3CEA /* PlayerStatsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ECADA3F16D85B6800AF3CEA /* PlayerStatsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9E010DFD16F651B200DDCB38 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		9E010DFE16F651B200DDCB38 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		9E010DFF16F651B200DDCB38 /* BaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
+		9E010E0216F651C100DDCB38 /* BattingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BattingViewController.h; sourceTree = "<group>"; };
+		9E010E0316F651C100DDCB38 /* BattingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BattingViewController.m; sourceTree = "<group>"; };
+		9E010E0416F651C100DDCB38 /* BattingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BattingViewController.xib; sourceTree = "<group>"; };
+		9E010E0716F651CB00DDCB38 /* BowlingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BowlingViewController.h; sourceTree = "<group>"; };
+		9E010E0816F651CB00DDCB38 /* BowlingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BowlingViewController.m; sourceTree = "<group>"; };
+		9E010E0916F651CB00DDCB38 /* BowlingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BowlingViewController.xib; sourceTree = "<group>"; };
+		9E0607E5170D0ED1001F54E7 /* NewCustomTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewCustomTableCell.xib; sourceTree = "<group>"; };
+		9E0607E7170D0F58001F54E7 /* NewCustomTableCellClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewCustomTableCellClass.h; sourceTree = "<group>"; };
+		9E0607E8170D0F58001F54E7 /* NewCustomTableCellClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewCustomTableCellClass.m; sourceTree = "<group>"; };
+		9E0607EA170D1301001F54E7 /* india-flag.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "india-flag.gif"; sourceTree = "<group>"; };
 		9ECADA0D16D83F2400AF3CEA /* CricStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CricStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ECADA1016D83F2400AF3CEA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9ECADA1216D83F2400AF3CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -48,9 +68,6 @@
 		9ECADA3516D848C100AF3CEA /* PlayerListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerListViewController.m; sourceTree = "<group>"; };
 		9ECADA3616D848C100AF3CEA /* PlayerListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerListViewController.xib; sourceTree = "<group>"; };
 		9ECADA3B16D85A1E00AF3CEA /* IndiaPlayerList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = IndiaPlayerList.plist; sourceTree = "<group>"; };
-		9ECADA3D16D85B6800AF3CEA /* PlayerStatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerStatsViewController.h; sourceTree = "<group>"; };
-		9ECADA3E16D85B6800AF3CEA /* PlayerStatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerStatsViewController.m; sourceTree = "<group>"; };
-		9ECADA3F16D85B6800AF3CEA /* PlayerStatsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerStatsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +118,18 @@
 				9ECADA2E16D83F6E00AF3CEA /* TeamListViewController.m */,
 				9ECADA3416D848C100AF3CEA /* PlayerListViewController.h */,
 				9ECADA3516D848C100AF3CEA /* PlayerListViewController.m */,
-				9ECADA3D16D85B6800AF3CEA /* PlayerStatsViewController.h */,
-				9ECADA3E16D85B6800AF3CEA /* PlayerStatsViewController.m */,
-				9ECADA3F16D85B6800AF3CEA /* PlayerStatsViewController.xib */,
+				9E010DFD16F651B200DDCB38 /* BaseViewController.h */,
+				9E010DFE16F651B200DDCB38 /* BaseViewController.m */,
+				9E010E0216F651C100DDCB38 /* BattingViewController.h */,
+				9E010E0316F651C100DDCB38 /* BattingViewController.m */,
+				9E010E0716F651CB00DDCB38 /* BowlingViewController.h */,
+				9E010E0816F651CB00DDCB38 /* BowlingViewController.m */,
+				9E0607E7170D0F58001F54E7 /* NewCustomTableCellClass.h */,
+				9E0607E8170D0F58001F54E7 /* NewCustomTableCellClass.m */,
+				9E010DFF16F651B200DDCB38 /* BaseViewController.xib */,
+				9E010E0416F651C100DDCB38 /* BattingViewController.xib */,
+				9E0607E5170D0ED1001F54E7 /* NewCustomTableCell.xib */,
+				9E010E0916F651CB00DDCB38 /* BowlingViewController.xib */,
 				9ECADA2F16D83F6E00AF3CEA /* TeamListViewController.xib */,
 				9ECADA3616D848C100AF3CEA /* PlayerListViewController.xib */,
 				9ECADA1F16D83F2400AF3CEA /* AppDelegate.h */,
@@ -116,6 +142,7 @@
 		9ECADA1716D83F2400AF3CEA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9E0607EA170D1301001F54E7 /* india-flag.gif */,
 				9ECADA3216D8431C00AF3CEA /* Teams.plist */,
 				9ECADA1816D83F2400AF3CEA /* CricStats-Info.plist */,
 				9ECADA1916D83F2400AF3CEA /* InfoPlist.strings */,
@@ -188,7 +215,11 @@
 				9ECADA3316D8431C00AF3CEA /* Teams.plist in Resources */,
 				9ECADA3816D848C200AF3CEA /* PlayerListViewController.xib in Resources */,
 				9ECADA3C16D85A1E00AF3CEA /* IndiaPlayerList.plist in Resources */,
-				9ECADA4116D85B6800AF3CEA /* PlayerStatsViewController.xib in Resources */,
+				9E010E0116F651B200DDCB38 /* BaseViewController.xib in Resources */,
+				9E010E0616F651C100DDCB38 /* BattingViewController.xib in Resources */,
+				9E010E0B16F651CB00DDCB38 /* BowlingViewController.xib in Resources */,
+				9E0607E6170D0ED1001F54E7 /* NewCustomTableCell.xib in Resources */,
+				9E0607EB170D1301001F54E7 /* india-flag.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +234,10 @@
 				9ECADA2116D83F2400AF3CEA /* AppDelegate.m in Sources */,
 				9ECADA3016D83F6E00AF3CEA /* TeamListViewController.m in Sources */,
 				9ECADA3716D848C200AF3CEA /* PlayerListViewController.m in Sources */,
-				9ECADA4016D85B6800AF3CEA /* PlayerStatsViewController.m in Sources */,
+				9E010E0016F651B200DDCB38 /* BaseViewController.m in Sources */,
+				9E010E0516F651C100DDCB38 /* BattingViewController.m in Sources */,
+				9E010E0A16F651CB00DDCB38 /* BowlingViewController.m in Sources */,
+				9E0607E9170D0F58001F54E7 /* NewCustomTableCellClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +352,7 @@
 				9ECADA2C16D83F2400AF3CEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

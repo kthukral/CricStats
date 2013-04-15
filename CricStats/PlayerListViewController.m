@@ -7,7 +7,9 @@
 //
 
 #import "PlayerListViewController.h"
-#import "PlayerStatsViewController.h"
+#import "BattingViewController.h"
+#import "BowlingViewController.h"
+#import "NewCustomTableCellClass.h"
 
 @interface PlayerListViewController ()
 
@@ -17,6 +19,7 @@
 @synthesize TeamName = _TeamName;
 @synthesize playerList = _playerList;
 @synthesize playerlistKeys = _playerlistKeys;
+@synthesize tabBarController = _tabBarController;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -32,15 +35,9 @@
     [super viewDidLoad];
     
     self.navigationItem.title = _TeamName;
-    NSLog(@"Team in load = %@",_TeamName);
-    
-    if([_TeamName isEqualToString:@"India"]){
-        NSLog(@"true");
-    NSString *indiaPlayerList = [[NSBundle mainBundle]pathForResource:@"IndiaPlayerList" ofType:@"plist"];
-    _playerList = [[NSDictionary alloc]initWithContentsOfFile:indiaPlayerList];
-    _playerlistKeys = [_playerList allKeys];
-    }
-    
+
+
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -50,18 +47,32 @@
 
 
 - (void)viewDidAppear:(BOOL)animated{
-     NSLog(@"Team = %@",_TeamName);
-    [self viewDidLoad];
-    /* self.navigationItem.title = _TeamName;
-    NSString *indiaPlayerList = [[NSBundle mainBundle]pathForResource:@"IndiaPlayerList" ofType:@"plist"];
-    _playerList = [[NSDictionary alloc]initWithContentsOfFile:indiaPlayerList];
-    _playerlistKeys = [_playerList allKeys];
     
-    NSLog(@"List = %@", [_playerlistKeys objectAtIndex:0]); */
+    self.navigationItem.title = _TeamName;
     
+    if([_TeamName isEqualToString:@"India"]){
+        NSString *indiaPlayerList = [[NSBundle mainBundle]pathForResource:@"IndiaPlayerList" ofType:@"plist"];
+        _playerList = [[NSMutableDictionary alloc]initWithContentsOfFile:indiaPlayerList];
+        _playerlistKeys = [_playerList allKeys];
+    }else {
+        [_playerList removeAllObjects];
+        _playerlistKeys = [_playerList allKeys];
+        
+    }
+
+    [self.tableView reloadData];
     
     
 
+}
+
+-(void)viewDidDisappear:(BOOL)animated{
+    
+    [_playerList removeAllObjects];
+    _playerlistKeys = [_playerList allKeys];
+    
+    [self.tableView reloadData];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -89,8 +100,17 @@
     }
 }
 
+//Height of custom cell
+/* - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 76;
+}
+ */
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    //Use the default table view cell
+    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     if(cell == nil){
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
@@ -106,6 +126,22 @@
     [[cell textLabel] setText:currentPlayer];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
+    
+    //Using a custom cell
+    
+    /* NewCustomTableCellClass *cell = (NewCustomTableCellClass *)[tableView dequeueReusableCellWithIdentifier:@"cell"];
+    if(cell == nil){
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"NewCustomTableCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
+    }
+    NSString *currentPlayer;
+    if([indexPath section] == 0){
+        currentPlayer = [_playerlistKeys objectAtIndex:indexPath.row];
+    }
+    [[cell cellNameLabel] setText:currentPlayer];
+    cell.cellImageView.image = [UIImage imageNamed:@"india-flag.gif"];
+    //cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    return cell; */
     
 }
 
@@ -152,13 +188,33 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    //self.baseView = [[BaseViewController alloc]initWithNibName:@"BaseViewController" bundle:nil];
+    //[self.navigationController pushViewController:self.baseView animated:YES];
     
-    if(!self.playerStatsViewController){
+    _tabBarController = [[UITabBarController alloc]init];
+    
+    BattingViewController *battingstats =[[BattingViewController alloc]initWithNibName:@"BattingViewController" bundle:nil];
+    
+    BowlingViewController *bowlingstats = [[BowlingViewController alloc]initWithNibName:@"BowlingViewController" bundle:nil];
+    
+    battingstats.tabBarItem.title = @"Batting";
+    bowlingstats.tabBarItem.title = @"Bowling";
+    NSString *player = _playerlistKeys[indexPath.row];
+    battingstats.playerName = player;
+    bowlingstats.playerName = player;
+    NSArray* controllers = [[NSArray alloc]initWithObjects:battingstats,bowlingstats, nil];
+    _tabBarController.viewControllers = controllers;
+    _tabBarController.selectedIndex = 0;
+    //[self.view addSubview:_tabBarController.view];
+    [self presentModalViewController:_tabBarController animated:YES];
+
+    
+    /* if(!self.playerStatsViewController){
         self.playerStatsViewController = [[PlayerStatsViewController alloc]initWithNibName:@"PlayerStatsViewController" bundle:nil];
     }
     NSString *playername = _playerlistKeys[indexPath.row];
     self.playerStatsViewController.recievedPlayer = playername;
-    [self.navigationController pushViewController:self.playerStatsViewController animated:YES];
+    [self.navigationController pushViewController:self.playerStatsViewController animated:YES]; */
 
     // Navigation logic may go here. Create and push another view controller.
     /*
