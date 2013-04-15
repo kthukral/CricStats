@@ -11,5 +11,6 @@
 @interface BowlingViewController : UIViewController
 
 @property (nonatomic,strong) NSString *playerName;
+- (IBAction)dismissBowlingView:(id)sender;
 
 @end

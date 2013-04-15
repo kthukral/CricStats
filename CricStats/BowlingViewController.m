@@ -37,4 +37,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)dismissBowlingView:(id)sender {
+    [self dismissModalViewControllerAnimated:YES];
+}
 @end
