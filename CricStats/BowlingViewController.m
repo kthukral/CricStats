@@ -15,6 +15,7 @@
 @implementation BowlingViewController
 
 @synthesize playerName = _playerName;
+@synthesize playerNameInView = _playerNameInView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,7 +30,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    _playerNameInView.text = _playerName;
 }
+
 
 - (void)didReceiveMemoryWarning
 {
