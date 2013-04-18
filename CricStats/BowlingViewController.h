@@ -12,5 +12,6 @@
 
 @property (nonatomic,strong) NSString *playerName;
 - (IBAction)dismissBowlingView:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *playerNameInView;
 
 @end
